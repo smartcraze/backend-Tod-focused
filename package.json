@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Backend for my dsa consistancy",
+  "description": "Backend",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,9 +10,11 @@
   "author": "suraj vishwakarma",
   "license": "ISC",
   "dependencies": {
+    "cloudinary": "^2.5.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.6",
     "express": "^4.21.1",
-    "mongoose": "^8.8.3"
+    "mongoose": "^8.8.3",
+    "multer": "^1.4.5-lts.1"
   }
 }

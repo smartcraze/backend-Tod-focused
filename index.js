@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import attendanceRoutes from './routes/attendanceRoutes.js';
+import AllRoutes from './routes/attendanceRoutes.js';
 import cors from 'cors';
 
 dotenv.config();
@@ -13,6 +13,11 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Attendance API!');
 });
 
-app.use('/api', attendanceRoutes);
+app.use('/api', AllRoutes);
+
+// app.listen(3000,()=>{
+//   console.log("App is listenign on 3000");
+  
+// })
 
 export default app;

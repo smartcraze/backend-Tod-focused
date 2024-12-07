@@ -63,7 +63,6 @@ export const deleteAllAttendance = async (req, res) => {
   try {
     await connectDb();
     
-    // Delete all documents in the Attendance collection
     const result = await Attendance.deleteMany({});
 
     // Check if any documents were deleted
