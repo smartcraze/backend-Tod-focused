@@ -24,9 +24,9 @@ app.get('/', (req, res) => {
 app.use('/api', AllRoutes);
 
 // Start the server
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`App is listening on port ${PORT}`);
-});
+// const PORT = 3000;
+// app.listen(PORT, () => {
+//   console.log(`App is listening on port ${PORT}`);
+// });
 
 export default app;
