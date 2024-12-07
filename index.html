@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCraze - Fullstack Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f9f3; /* Light greenish background */
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #81C784); /* Greenish gradient */
+      color: white;
+      text-align: center;
+      padding: 30px 0; /* Reduced header height */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .portfolio-link {
+      display: block;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #4CAF50; /* Green color for portfolio link */
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .portfolio-link:hover {
+      color: #388E3C; /* Darker green on hover */
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+
+    section {
+      padding: 40px 0; /* Adjusted padding */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Ensure each section is full height of viewport */
+    }
+
+    section h2 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .about-content,
+    .features-content {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about-content p,
+    .features-content ul {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .cta-button {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      background: #45a049;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .container {
+        width: 90%;
+      }
+
+      .about-content,
+      .features-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-button {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Welcome to SmartCraze</h1>
+      <p>Your one-stop solution for modern backend and full-stack development!</p>
+    </div>
+  </header>
+
+  <!-- Portfolio Link after Header -->
+  <a href="https://surajv.me" class="portfolio-link" target="_blank">Check out my Portfolio: surajv.me</a>
+  
+  <section id="about">
+    <div class="container about-content">
+      <div>
+        <h2>About Me</h2>
+        <p>Hello! I'm Suraj Vishwakarma, a passionate full-stack developer who loves crafting robust APIs, building engaging front-end experiences, and exploring new technologies. I build scalable, efficient, and user-friendly applications that solve real-world problems.</p>
+        <button class="cta-button">Let's Connect!</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container features-content">
+      <div>
+        <h2>Why SmartCraze?</h2>
+        <ul>
+          <li>Easy-to-use APIs with fast response times</li>
+          <li>Beautiful and responsive front-end interfaces</li>
+          <li>Optimized for high performance and scalability</li>
+          <li>Built with cutting-edge technologies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 SmartCraze. Built by a passionate student and developer.</p>
+    </div>
+  </footer>
+</body>
+</html>
